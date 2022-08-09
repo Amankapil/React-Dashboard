@@ -1,0 +1,168 @@
+.profile{
+}
+.card{
+  border: 1px solid beige;
+  border-radius: 10px;
+
+}
+
+.card-img-top {
+  border: 1px solid beige;
+  border-radius: 10px;
+  height: 15%;
+  position: absolute;
+}
+.img1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-top: 63px;
+}
+.img1 img {
+  height: 80px;
+  width: 80px;
+  border: 3px solid rgb(255, 255, 255);
+  border-radius: 50%;
+}
+.profilename {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .fristname {
+    font-weight: 800;
+  }
+  .lastname {
+    font-size: 13px;
+    font-weight: 400;
+    color: rgb(120, 122, 125);
+  }
+}
+.followercontaner {
+  display: flex;
+  margin-top: 17px;
+  // border-bottom: 0.3px solid rgb(100, 100, 105);
+  // height: 60px;
+  .products {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 2;
+    flex-direction: column;
+    border-right: 1px solid rgb(100, 100, 105);
+    .numcontain {
+      font-weight: 800;
+      font-size: 13px;
+    }
+    .productcontain {
+      font-size: 11px;
+      color: rgb(120, 122, 125);
+      font-weight: bold;
+    }
+  }
+  .follower {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 2;
+    flex-direction: column;
+    .mainfollower {
+      font-weight: 800;
+      font-size: 13px;
+    }
+    .followercontain {
+      font-size: 11px;
+      color: rgb(120, 122, 125);
+      font-weight: bold;
+    }
+  }
+}
+.head {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.user1{
+  font-size: 15px;
+  font-weight: bold;
+}
+.progres {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  // color: aquamarine ;
+}
+.info {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 8px;
+  .nums {
+    font-weight: bolder;
+  }
+  .earnings {
+    font-size: 11px;
+    color: rgb(120, 122, 125);
+    font-weight: bold;
+  }
+}
+.increse {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .plus {
+    font-size: larger;
+  }
+  .val {
+    color: green;
+    border: 0.3px solid greenyellow;
+    border-radius: 26px;
+    font-size: 12px;
+    margin: 8px;
+    background-color: rgb(223, 255, 221);
+    .icon{
+      font-size: 13px;
+    }
+  }
+  .content{
+    font-size: 12px;
+    color: rgb(120, 122, 125);
+    font-weight: bold;
+  }
+  
+}
+.activity{
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 9px;
+  margin: 7px;
+}
+
+.date{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 60px;
+  font-weight: 400;
+  font-size: 15px;
+  // border: 1px solid rebeccapurple;
+  border-radius: 15px;
+  background-color: rgb(219, 219, 219);
+}
+.contentt{
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  margin-left: 13px;
+  justify-content: center;
+  color: rgb(120, 122, 125);
+  font-size: 11px;
+}
+.month{
+  font-size: 13px;
+}

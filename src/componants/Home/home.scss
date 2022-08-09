@@ -1,0 +1,30 @@
+.Home{
+    display: flex;
+    // flex: 2;
+    // background-color: aqua;
+    .HomeContainer{
+        flex: 6;
+        .widgests{
+            display: flex;
+            // flex: 3;
+            padding: 20px;
+            .profie{
+                display: flex;
+                flex: 3;
+            }
+            
+        }
+        .Wholechart{
+            width: 96%;
+        }
+        .chart{
+            display: flex;
+            flex-direction: column;
+            flex: 6;
+        }
+    }
+    .prof{
+        display: flex;
+        flex-direction: row;
+    }
+}
