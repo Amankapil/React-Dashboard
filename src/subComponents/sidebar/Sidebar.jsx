@@ -1,5 +1,6 @@
-import React from "react";
+import React ,{useState} from "react";
 import "./sidebar.scss";
+import "./toggle.jsx"
 import KeyboardArrowDownTwoToneIcon from "@mui/icons-material/KeyboardArrowDownTwoTone";
 
 import DashboardIcon from "@mui/icons-material/Dashboard";
@@ -15,24 +16,20 @@ import GroupAddRoundedIcon from "@mui/icons-material/GroupAddRounded";
 import SpeakerGroupRoundedIcon from "@mui/icons-material/SpeakerGroupRounded";
 import DensityMediumSharpIcon from "@mui/icons-material/DensityMediumSharp";
 const Sidebar = () => {
-  function openNav() {
-    document.getElementById("myNav").style.width = "100%";
-  }
-
-  function closeNav() {
-    document.getElementById("myNav").style.width = "0%";
-  }
+  const [isOpen, setIsope] = useState(false);
+  const toggle = ()=>setIsope (!isOpen);
   return (
     <>
-      <div className="sidebar overlay" id="myNav">
-        <div className="overlay-content">
+      <div className="sidebar">
+        <div  className="sidepanel"id="mySidepanel">
           <div className="top">
             <div className="drop">
               {/* <span className="drop">Chat</span> */}
               <small className="title">MENU</small>
+              {/* <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">x</a> */}
               {/* <span className="hot">Hot</span> */}
-              <span className="opnenav" onclick="openNav()">
-                <DensityMediumSharpIcon className="icon closebtn" />
+              <span className="opnenav">
+                <DensityMediumSharpIcon onClick= {toggle} className="icon" />
               </span>
             </div>
             <div className="dashboard">

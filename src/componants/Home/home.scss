@@ -6,8 +6,9 @@
         flex: 6;
         .widgests{
             display: flex;
+            margin-left: 20px;
             // flex: 3;
-            padding: 20px;
+            // padding: 20px;
             .profie{
                 display: flex;
                 flex: 3;
@@ -16,6 +17,7 @@
         }
         .Wholechart{
             width: 96%;
+            margin-top: 20px;
         }
         .chart{
             display: flex;
@@ -27,4 +29,23 @@
         display: flex;
         flex-direction: row;
     }
+}
+////////////////////////////////////////////////////////////////////
+@media screen and (max-width: 900px) {
+    .widgests{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 18px;
+    
+    }
+    h1{
+        display: none;
+    }
+}
+h1{
+    color: red;
 }

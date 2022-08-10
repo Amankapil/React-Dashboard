@@ -1,7 +1,7 @@
 import "./Summery.scss";
 import KeyboardArrowDownTwoToneIcon from "@mui/icons-material/KeyboardArrowDownTwoTone";
 import MoreHorizIcon from "@mui/icons-material/MoreHoriz";
-import { PieChart, Pie, Sector, Cell, ResponsiveContainer } from "recharts";
+import { PieChart, Pie, Cell, ResponsiveContainer } from "recharts";
 
 import {
   AreaChart,
@@ -124,7 +124,7 @@ const Summery = () => {
             <PieChart width={300} height={200}>
               <Pie
                 data={dta}
-                cx={140}
+                cx={120}
                 cy={100}
                 innerRadius={60}
                 outerRadius={80}

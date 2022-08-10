@@ -9,6 +9,7 @@ import "./home.scss";
 
 const Home = () => {
   return (
+    <>
     <div className="Home">
       <Sidebar />
       <div className="HomeContainer">
@@ -37,6 +38,13 @@ const Home = () => {
         </div>
       </div>
     </div>
+    <h1>
+    For mobile view sidebar will be collapsed
+    and profile part in the navbar profile photo
+    </h1>
+
+
+    </>
   );
 };
 

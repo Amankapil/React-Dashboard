@@ -7,10 +7,13 @@
     color: #555;
     .wrapper{
         display: flex;
-        padding: 20px;
+        padding: 5px;
         align-items: center;
         width: 100%;
         justify-content: space-between;
+        .icoon{
+            // visibility: hidden;
+        }
     }
     .item{
         display: flex;
@@ -26,5 +29,21 @@
             border-radius: 50%;
         }
 
+    }
+}
+@media screen and (max-width: 900px) {
+    .h5{
+        // display: block;
+        // display: flex;
+        // align-items: center;
+        // justify-content: center;
+        // margin: auto;
+    }
+    h5{
+        font-size:33px;
+        font-weight: bold;
+    }
+    .wrapper>.icoon{
+        visibility:visible;
     }
 }

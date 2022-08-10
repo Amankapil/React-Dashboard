@@ -1,7 +1,7 @@
 import "./Wholechart.scss";
 import KeyboardArrowDownTwoToneIcon from "@mui/icons-material/KeyboardArrowDownTwoTone";
 import AddRoundedIcon from "@mui/icons-material/AddRounded";
-import React, { PureComponent } from "react";
+import React from "react";
 import {
   BarChart,
   Bar,
@@ -107,7 +107,7 @@ const Wholechart = () => {
         </div>
         <div className="calculater">
           <div className="month">
-            <small>this month</small>
+            <small>This month</small>
             <div className="priceontainer">
               <span className="price">$24,568</span>
               <span className="scounter">
@@ -150,7 +150,7 @@ const Wholechart = () => {
             <ResponsiveContainer width="100%" height="100%">
               <BarChart
                 width={500}
-                height={300}
+                height={200}
                 data={data}
                 margin={{
                   top: 5,
