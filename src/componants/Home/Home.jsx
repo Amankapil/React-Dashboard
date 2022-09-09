@@ -2,46 +2,39 @@ import React from "react";
 import Navbar from "../../subComponents/navbar/Navbar";
 import Profile from "../../subComponents/profile/Profile";
 import Sidebar from "../../subComponents/sidebar/Sidebar";
-import Summery from "../../subComponents/summery/Summery";
-import Wholechart from "../../subComponents/Wholechart/Wholechart";
-import Widgets from "../../subComponents/widgets/Widgets";
+import Provide from "../PMI/PMI";
+
+
+import { useDispatch, useSelector } from "react-redux";
+import { selectUser } from "../../features/user/userSlice";
+
 import "./home.scss";
 
 const Home = () => {
+const user = useSelector(selectUser);
+
+
+
   return (
     <>
     <div className="Home">
       <Sidebar />
       <div className="HomeContainer">
         <Navbar />
-        <div className="prof">
-          <div className="chart">
-            <div className="widgests">
-              <Widgets type="revenue" />
-              <Widgets type="orders" />
-              <Widgets type="COSTOMER" />
-              {/* <Widgets/> */}
-            </div>
-            <div className="Wholechart">
-              <Wholechart />
-            </div>
-            {/* <div className="widgests">
-              <Widgets type="revenue" />
-              <Widgets type="orders" />
-              <Widgets type="COSTOMER" />
-            </div> */}
-            <Summery/>
-          </div>
-          <div className="profile">
-            <Profile />
-          </div>
-        </div>
+        {/* <Provide/>   */}
+        {
+          user  ? <Provide/> :
+          (
+            <h1>
+              im not put the sidebar routing due to time problem 
+              so you can  login and and directly fill the emloyye detail
+            </h1>
+          )
+        }
+      </div>
+      <div className="createuser">
       </div>
     </div>
-    <h1>
-    For mobile view sidebar will be collapsed
-    and profile part in the navbar profile photo
-    </h1>
 
 
     </>

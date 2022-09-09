@@ -1,0 +1,65 @@
+.bottum-navbar {
+  width: 100%;
+  box-sizing: border-box;
+  box-shadow: 15px 0px 11px -3px rgba(0, 0, 0, 0.47);
+}
+.query ul {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  list-style: none;
+  margin-top: 12px;
+  border-bottom: 1px solid (133, 123, 123);
+
+  .itemms {
+    padding: 12px;
+    margin-top: 12px;
+    font-size: 17px;
+    background-color: rgba(208, 208, 208, 0.313);
+    margin: 5px;
+
+    border: 1px solid (133, 123, 123);
+    border-radius: 15px;
+
+    &:hover {
+      background-color: rgba(255, 68, 0, 0.285);
+    }
+  }
+}
+button{
+    border :  none;
+}
+
+.pmi-container {
+  display: flex;
+}
+.pmi-form {
+  width: 100%;
+}
+.LIcense {
+  border-bottom: 1px solid black;
+}
+header {
+  border-bottom: 1px solid black;
+}
+
+.pmi-container .details ul li {
+  list-style: none;
+  padding: 5px;
+  margin: 5px;
+  &:hover {
+    background-color: rgb(235, 235, 235);
+  }
+  width: 150px;
+  border-radius: 8px;
+  font-style: none;
+  color: black;
+}
+.nationality {
+  display: flex;
+  margin: 5px;
+}
+.immg {
+  height: 160px;
+  width: 250px;
+}

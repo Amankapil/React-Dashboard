@@ -1,44 +1,55 @@
 import React from "react";
 import "./navbar.scss";
-import im from "./k44.jpg";
-import SearchIcon from "@mui/icons-material/Search";
-import AssistantPhotoRoundedIcon from "@mui/icons-material/AssistantPhotoRounded";
-import DashboardIcon from "@mui/icons-material/Dashboard";
-import NotificationAddRoundedIcon from "@mui/icons-material/NotificationAddRounded";
-import DensityMediumSharpIcon from "@mui/icons-material/DensityMediumSharp";
+import { useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 
-import SettingsIcon from "@mui/icons-material/Settings";
+import { useNavigate } from "react-router";
+import { selectUser, logout } from "../../features/user/userSlice";
 const Navbar = () => {
+  const user = useSelector(selectUser);
+
+  const log = localStorage.getItem("logindetail");
+  const dispatch = useDispatch();
+  const handlelogout = () => {
+    dispatch(logout());
+  };
+
+  const navigate = useNavigate();
   return (
     <div className="navbar">
       <div className="wrapper">
-        <div className="icoon">
-          <DensityMediumSharpIcon className="icon" />
-        </div>
         <div className="h5">
-          <h5>Dashboard</h5>
+          <h5>PMI</h5>
         </div>
-        <div className="item">
-          <div className="items">
-            <SearchIcon />
-          </div>
-          <div className="items">
-            <AssistantPhotoRoundedIcon />
-          </div>
-          <div className="items">
-            <DashboardIcon />
-          </div>
-          <div className="items">
-            <NotificationAddRoundedIcon />
-          </div>
-          <div className="items">
-            <SettingsIcon />
-          </div>
-          <div className="items">
-            <img src={im} alt="" className="avtar" />
-          </div>
+        {/* <div className="item"> */}
+        <div className="items">
+          {user ? (
+            <div className="container df-content">
+              <h2>{user.name}</h2>
+              {/* <button
+                type="submit"
+                onClick={handlelogout}
+                className="btn btn-outline-warning"
+              >
+                logout
+              </button> */}
+            </div>
+          ) : (
+            <>
+              <button
+                onClick={() => navigate("/login")}
+                type="button"
+                class="btn btn-primary"
+              >
+                login
+              </button>
+            </>
+          )}
         </div>
+        {/* </div> */}
       </div>
+      <h1>
+      </h1>
     </div>
   );
 };

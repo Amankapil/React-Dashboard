@@ -2,16 +2,22 @@
   display: flex;
   margin: 9px;
   cursor: pointer;
+  height: 100%;
 }
 .sidebar {
   flex: 1;
-  background-color: rgb(8, 9, 34);
+  height: 100vh;
+  border-right: 5px solid red;
+  border-radius:38px;
+  box-shadow: 15px 0px 11px -3px rgba(0, 0, 0, 0.47);
+  // background-color: rgb(8, 9, 34);
   color: rgb(128, 132, 136);
   border-right: 0.5px solid lightblue;
   min-height: 100%;
   list-style: none;
   font-size: 14px;
   font-weight: bold;
+  
   .center {
     ul {
       padding-left: 0;
@@ -24,9 +30,16 @@
         padding: 3px;
         cursor: pointer;
         :hover {
-          background-color: rgb(105, 152, 194);
+          background-color: rgb(218, 65, 0);
+
         }
       }
+    }
+  }
+  .hoverr{
+    :hover {
+      background-color: rgb(218, 65, 0);
+
     }
   }
   .title {
@@ -63,9 +76,10 @@
   display: flex;
   justify-content: space-between;
   width: 100%;
+  // color: rgb(255, 51, 0);
   margin-left: 7px;
   .hot {
-    color: rgba(255, 0, 0, 0.39);
+    color: rgba(0, 0, 0, 0.39);
     background-color: rgba(245, 1, 1, 0.151);
     // border: 1px solid red;
     border-radius: 10px;
